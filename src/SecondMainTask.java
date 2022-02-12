@@ -18,7 +18,6 @@ public class SecondMainTask {
             System.out.println(file.exists());
             int counterAr = 0;
             for (String stringFile : list1) {
-                //printWriter.write(stringFile + "\n");
                 printWriter.println("--------" + stringFile);
                 isFile = !stringFile.contains(".") ? new File(ar.get(counterAr)) : null;
                 counterAr += 1;

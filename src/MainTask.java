@@ -25,8 +25,6 @@ public class MainTask {
                     fileWriter.write("Is file : ");
                     fileWriter.write(fileName.getName() + "\n");
                 }
-                //System.out.println(args[0] + " " + args.length);
-
             }
         } catch (IOException ex) {
         } finally {
