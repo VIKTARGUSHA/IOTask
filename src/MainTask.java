@@ -34,7 +34,7 @@ public class MainTask {
                 } catch (IOException ex) {
                 }
             }
-            fileWriter.close();
+            //fileWriter.close();
         }
     }
 }
