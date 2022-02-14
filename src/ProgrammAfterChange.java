@@ -1,4 +1,4 @@
-//private class ProgrammAfterChange {
+//private class ProgrammAfterChange         {
 //    private int x = 12;
 //    private double y = 6;
 //    private String s = "Hello";
