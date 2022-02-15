@@ -1,1 +1,12 @@
-[[Ljava.lang.String;@16b98e56, [Ljava.lang.String;@7ef20235, [Ljava.lang.String;@27d6c5e0, [Ljava.lang.String;@4f3f5b24, [Ljava.lang.String;@15aeb7ab, [Ljava.lang.String;@7b23ec81, [Ljava.lang.String;@6acbcfc0, [Ljava.lang.String;@5f184fc6, [Ljava.lang.String;@3feba861, [Ljava.lang.String;@5b480cf9, [Ljava.lang.String;@6f496d9f, [Ljava.lang.String;@723279cf]
+//PRIVATE CLASS PROGRAMMAFTERCHANGE         { 
+//    PRIVATE INT x = 12; 
+//    PRIVATE DOUBLE y = 6; 
+//    PRIVATE STRING s = "HELLO"; 
+//    PRIVATE DOUBLE d; 
+//    PROGRAMMAFTERCHANGE() { 
+//dr        d = x * (INT) y; 
+//    } 
+//    PRIVATE STATIC VOID MAIN(STRING[] ARGS) { 
+//        PROGRAMMAFTERCHANGE PROGRAMMAFTERCHANGECHANGE = NEW PROGRAMMAFTERCHANGE(); 
+//        SYSTEM.OUT.PRINTLN((INT)PROGRAMMAFTERCHANGECHANGE.D);    } 
+//    } 

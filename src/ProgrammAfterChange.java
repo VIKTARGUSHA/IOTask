@@ -4,7 +4,7 @@
 //    private String s = "Hello";
 //    private double d;
 //    ProgrammAfterChange() {
-//        d = x * (int) y;
+//dr        d = x * (int) y;
 //    }
 //    private static void main(String[] args) {
 //        ProgrammAfterChange programmAfterChangeChange = new ProgrammAfterChange();
