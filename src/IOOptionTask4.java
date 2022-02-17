@@ -9,18 +9,13 @@ public class IOOptionTask4 {
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader("C:\\Users\\AdmiN\\IOTask\\src\\ProgrammAfterChange.java"))) {
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("IOOptionalTaskFour"));
             ArrayList<ArrayList<String>> ar = new ArrayList<>();
-
-
               int a;
             while ((a = bufferedReader.read()) != -1) {
                 String s = ((char) a + bufferedReader.readLine());
                 String[] arStr = s.split(" ");
                 ArrayList<String> arEventually = new ArrayList<>();
                 for (String str : arStr) {
-                   // if (str.contains("//")) {
-
                        String strWithout = str.replace("//", "");
-                  //  }
                     if (strWithout.length() > 2) {
                         String strUp = strWithout.toUpperCase();
                         arEventually.add(strUp);
