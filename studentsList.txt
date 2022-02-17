@@ -1,0 +1,56 @@
+
+ hello Korolev Serge Botanika Biology Facultet 3.7 5.8 10.0
+
+ hello Abukhovich Viktar Botanika Biology Facultet None 1.2 4.4
+
+ hello Eglit Viktar Botanika Biology Facultet 4.0 8.9 7.6
+
+ hello Mahmud Abass MicroBiology Biology Facultet 83.4 9.0 0.3
+
+ hello Mahmud Cherces MicroBiology Biology Facultet 9.8 None 4.3
+
+ hello Ramzan Kadirov genetics Biology Facultet None 3.0 0.2
+
+ hello Ramzan Zan genetics Biology Facultet 2.0 None 0.2
+
+ hello Ramzan Zan Zan genetics Biology Facultet 3.0 7.0 5.5
+
+ hello Koroleva Natasha InternationalEconomicRights InternationalRelativeShips facultet 3.7 5.8 0.3
+
+ hello Alegrova Viktar InternationalEconomicRights InternationalRelativeShips facultet 4.4 8.9 7.6
+
+ hello Ovsienko Tatiyana InternationalEconomicRights InternationalRelativeShips facultet 1.4 10.0 7.6
+
+ hello Bulanova Tatiyana functions theory Meh-Mat facultet 6.0 1.8 1.3
+
+ hello Shalimov Vadim functions theory Meh-Mat facultet 4.9 3.0 8.2
+
+ hello Onopko Viktar functions theory Meh-Mat facultet 1.4 7.9 4.8
+
+ hello Bulanova Tatiyana Higher Algebra and information protection Meh-Mat facultet 9.0 8.8 5.3
+
+ hello Bebeshko Vadim Higher Algebra and information protection Meh-Mat facultet 4.1 4.0 4.2
+
+ hello Bulan Buyan Bio and Nano Mechanics Meh-Mat facultet None None None
+
+ hello Shalimov Vadim Bio and Nano Mechanics Meh-Mat facultet 4.9 3.0 -8.2
+
+ hello Onopko Viktar Bio and Nano Mechanics Meh-Mat facultet 1.4 9.9 7.8
+
+ hello Ronaldo Tatiyana BioPhisika Phisical facultet 2.0 1.8 7.3
+
+ hello Becham Vadim BioPhisika Phisical facultet 8.9 3.0 8.2
+
+ hello Rashford Viktar BioPhisika Phisical facultet 4.1 0.0 8.4
+
+ hello Kostar-Valdau Ivan Nuclear Phisics Phisical facultet None 2.3 None
+
+ hello Hidi Lena Nuclear Phisics Phisical facultet 8.0 5.0 None
+
+ hello Rudgar Hauer Nuclear Phisics Phisical facultet 4.1 3.9 8.4
+
+ hello Messi Ibragim Solid state physics Phisical facultet 9.0 5.9 3.3
+
+ hello Becham Vadim Solid state physics Phisical facultet 0.9 -1.0 8.2
+
+ hello Rashford Viktar Solid state physics Phisical facultet 0 0.9 8.9
