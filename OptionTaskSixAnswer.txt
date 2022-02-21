@@ -1,0 +1,8 @@
+double d   oops this type from command raw :double
+int i 
+String s   oops this type from command raw :String
+char c
+long l
+String str  oops this type from command raw :String
+short sh
+double d  oops this type from command raw :double

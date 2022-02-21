@@ -1,0 +1,8 @@
+double d 
+int i 
+String s 
+char c
+long l
+String str
+short sh
+double d
