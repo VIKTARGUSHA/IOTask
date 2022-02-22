@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class IOOptionTask7 {
     public static void main(String[] args) throws IOException {
-        File file = new File("C:\\Users\\AdmiN\\IOTask\\IOTask7.txt");
+        File file = new File("C:\\Users\\VAbukhovich\\IdeaProjects\\IO\\IOTask7.txt");
         file.createNewFile();
         try (//BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
              BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
@@ -56,11 +56,15 @@ public class IOOptionTask7 {
                 ArrayList<String> arAfterSplit = new ArrayList<>();
                 ArrayList<String> stringForDelete = new ArrayList<>();
                 for (String threreIsString : arForThisRow) {
-                    String imdt = threreIsString.replace("?", " ?");
-                    arAfterSplit.add(imdt.replace(",", " ,"));
+                    if (threreIsString.length() == 4 || threreIsString.length() == 5) {
+                        String imdt = threreIsString.replace("?", "");
+                        arAfterSplit.add(imdt.replace(",", ""));
+                    }
+                    else arAfterSplit.add(threreIsString);
                 }
-                ArrayList<Integer> indexesForDel = new ArrayList<>();
 
+                ArrayList<Integer> indexesForDel = new ArrayList<>();
+                System.out.println(arAfterSplit);
                 int counterHonest = 0;
 
                 for (String st : arAfterSplit) {
@@ -78,7 +82,7 @@ public class IOOptionTask7 {
                             indexesForDel.add(indForDel);
                         }
                     }
-                    // arAfterSplit.forEach(o -> System.out.print(o + " "));
+
                 }
                 if (counterHonest % 2 == 1) {
                     for (String sCond : arAfterSplit) {
@@ -97,7 +101,6 @@ public class IOOptionTask7 {
                 arAfterSplit.removeAll(stringForDelete);
                 System.out.println(arAfterSplit.toString());
                 for (String sf : arAfterSplit) {
-
                     bufferedWriter1.write(sf + " ");
                 }
                 bufferedWriter1.write("\n");
