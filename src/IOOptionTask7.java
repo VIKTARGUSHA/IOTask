@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class IOOptionTask7 {
     public static void main(String[] args) throws IOException {
-        File file = new File("C:\\Users\\VAbukhovich\\IdeaProjects\\IO\\IOTask7.txt");
+        File file = new File("C:\\Users\\AdmiN\\IOTask\\IOTask7.txt");
         file.createNewFile();
         try (//BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
              BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
@@ -53,48 +53,54 @@ public class IOOptionTask7 {
 
             for (String str : arRows) {
                 String[] arForThisRow = str.split(" ");
-                ArrayList <String> arAfterSplit = new ArrayList<>();
-                arAfterSplit.addAll(Arrays.asList(arForThisRow));
+                ArrayList<String> arAfterSplit = new ArrayList<>();
+                ArrayList<String> stringForDelete = new ArrayList<>();
+                for (String threreIsString : arForThisRow) {
+                    String imdt = threreIsString.replace("?", " ?");
+                    arAfterSplit.add(imdt.replace(",", " ,"));
+                }
                 ArrayList<Integer> indexesForDel = new ArrayList<>();
-           //    System.out.println(Arrays.toString(arForThisRow));
+
                 int counterHonest = 0;
 
                 for (String st : arAfterSplit) {
-                    String string = st.replace("," , "");
-                    if (string.length() >= 3 && string.length() < 5) {
+                    if (st.length() >= 3 && st.length() < 5) {
                         counterHonest++;
                     }
-                  // System.out.println(string);
                 }
-                System.out.println( counterHonest);
+                System.out.println(counterHonest);
+
                 if (counterHonest % 2 == 0) {
                     for (String streng : arAfterSplit) {
-                        String strWithoutComma = streng.replace("," , "");
+                        String strWithoutComma = streng.replace(",", "");
                         if (strWithoutComma.length() >= 3 && strWithoutComma.length() < 5) {
                             int indForDel = arAfterSplit.indexOf(streng);
                             indexesForDel.add(indForDel);
                         }
                     }
-                    System.out.println(Arrays.toString(arForThisRow));
+                    // arAfterSplit.forEach(o -> System.out.print(o + " "));
                 }
                 if (counterHonest % 2 == 1) {
-                        for (String sCond : arAfterSplit) {
-                            while (counterHonest > 1 ) {
-                                String stringWithNoComma = sCond.replace("," , "");
-                            if (stringWithNoComma.length() >= 3 && stringWithNoComma.length() < 5) {
-                                int indForDel = arAfterSplit.indexOf(sCond);
-                                indexesForDel.add(indForDel);
-                                counterHonest--;
-                            }
+                    for (String sCond : arAfterSplit) {
+
+
+                        if (sCond.length() >= 3 && sCond.length() < 5 && counterHonest > 1) {
+                            indexesForDel.add(arAfterSplit.indexOf(sCond));
+                            counterHonest--;
                         }
                     }
                 }
-                for(int strn : indexesForDel){
-                    arAfterSplit.set(strn, "ThisElementWilleDeleted");
+                for (int strn : indexesForDel) {
+                    arAfterSplit.set(strn, "ThisElementWillBeDeleted");
+                    stringForDelete.add(arAfterSplit.get(strn));
                 }
-                arAfterSplit.removeAll(indexesForDel);
+                arAfterSplit.removeAll(stringForDelete);
                 System.out.println(arAfterSplit.toString());
-                bufferedWriter1.write(arAfterSplit.toString() + "\n");
+                for (String sf : arAfterSplit) {
+
+                    bufferedWriter1.write(sf + " ");
+                }
+                bufferedWriter1.write("\n");
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

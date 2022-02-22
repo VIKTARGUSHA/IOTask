@@ -11,7 +11,7 @@
 
  hello Ramzan Kadirov genetics Biology Facultet None 3.0 0.2
 
- hello Ramzan Zan genetics Biology Facultet 2.0 None 0.2
+ hello Ramzan Zan genetics Biology Facultet 20.0 None 0.2
 
  hello Ramzan Zan Zan genetics Biology Facultet 3.0 7.0 5.5
 
