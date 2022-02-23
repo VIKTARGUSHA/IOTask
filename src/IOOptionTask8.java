@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class IOOptionTask8 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException , FileNotFoundException{
         File file = new File("C:\\Users\\VAbukhovich\\IdeaProjects\\IO\\IOTask8Answer.txt");
         file.createNewFile();
         File file1 = new File("C:\\Users\\VAbukhovich\\IdeaProjects\\IO\\src\\IOOptionTask2.java");
@@ -11,10 +11,15 @@ public class IOOptionTask8 {
         try (Scanner sc = new Scanner(new FileReader(file1));
              BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file))) {
             while (sc.hasNext()) {
-                String word = sc.nextLine();
-                ar.add(word.replaceAll("\t, \n, \s, \r",""));
+                String word = sc.nextLine().replaceAll(" ","");
+                String word1 = word.replaceAll("\\+", " + ");
+                ar.add(word1.replaceAll("="," = "));
             }
-            System.out.println(ar);
+            for (String s : ar) {
+                System.out.println(s);
+                bufferedWriter.write(s + "\n");
+            }
+
         }
     }
 }

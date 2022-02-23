@@ -8,14 +8,8 @@ import java.util.Scanner;
 
 public class IOOptionalTask1 {
     public static void main(String[] args) throws IOException{
-/*
-break
- */
-         File fileIO = new File("C:\\Users\\AdmiN\\IOTask\\folder"); //"fileOneMore.txt");
          fileIO.mkdir();
          File fileIOTwo = new File(fileIO, "oneMoreFile");
-         // fileIO.createNewFile();
-         // fileIO.delete();
          FileWriter fileWriter = new FileWriter(fileIOTwo);
         try {
             fileWriter.write("\n");
@@ -43,4 +37,3 @@ break
         fileWriter1.close();
      }
     }
-

@@ -1,0 +1,24 @@
+importjava.io.*;
+importjava.util.ArrayList;
+importjava.util.Scanner;
+
+publicclassIOOptionTask2{
+publicstaticvoidmain(String[]args)throwsIOException{
+Filefile = newFile("C:\\Users\\AdmiN\\IOTask\\src\\ProgrammBeforeChange.java");
+FileReaderfileReader = newFileReader(file);
+Scannersc = newScanner(fileReader);
+ArrayList<String>ar = newArrayList<>();
+while(sc.hasNext()){
+Stringstr = sc.nextLine().replace("public","private");
+Stringstr1 = str.replace("Before","After");
+ar.add(str1);
+}
+fileReader.close();
+//System.out.println(ar.size());
+FileWriterfileWriter = newFileWriter("C:\\Users\\AdmiN\\IOTask\\src\\ProgrammAfterChange.java");
+for(Stringstr:ar){
+fileWriter.write(str + "\n");
+}
+fileWriter.close();
+}
+}

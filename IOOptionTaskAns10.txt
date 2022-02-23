@@ -1,0 +1,38 @@
+java.io.*; import 
+java.util.ArrayList; import 
+java.util.Arrays; import 
+IOOptionTask class IOOptionTask5 { 
+IOException    public static void main(String[] args) throws  { 
+FileReaderstudentsList.txt;        BufferedReader bufferedReader = new BufferedReader(new FileReader("studentsList.txt")); 
+FileWriterstudentList.txt;        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("studentList.txt")); 
+ArrayList;        ArrayList<Character> arScoresStudent = new ArrayList<>(); 
+bufferedReader.read        while (bufferedReader.read() != -1) { 
+bufferedReader.readLine;            String empty = bufferedReader.readLine(); 
+bufferedReader.readLine;            String student = bufferedReader.readLine(); 
+;            String[] studentForAverageScore = student.split(" "); 
+;            double avScore = 0; 
+;            int counterItems = 0; 
+].equalsNone            if (!studentForAverageScore[studentForAverageScore.length - 1].equals("None")){ 
+;                counterItems +=1; 
+Double.parseDoublestudentForAverageScore[studentForAverageScore.length];                avScore += Double.parseDouble(studentForAverageScore[studentForAverageScore.length-1]); 
+].equalsNone            if (!studentForAverageScore[studentForAverageScore.length - 2].equals("None")){ 
+;                counterItems +=1; 
+Double.parseDoublestudentForAverageScore[studentForAverageScore.length];                avScore += Double.parseDouble(studentForAverageScore[studentForAverageScore.length-2]); 
+].equalsNone            if (!studentForAverageScore[studentForAverageScore.length - 3].equals("None")){ 
+;                counterItems +=1; 
+Double.parseDoublestudentForAverageScore[studentForAverageScore.length];                avScore += Double.parseDouble(studentForAverageScore[studentForAverageScore.length-3]); 
+avScorecounterItems;            double averageScore = avScore/counterItems; 
+averageScore            if (averageScore > 7){ 
+studentForAverageScore[].toUpperCase;                studentForAverageScore[2] = studentForAverageScore[3].toUpperCase(); 
+Arrays.toStringstudentForAverageScore;            String studentWithUpper = Arrays.toString(studentForAverageScore); 
+StringReaderstudentWithUpper;            StringReader stringReader = new StringReader(studentWithUpper); 
+char[studentWithUpper.length];            char[] arStud = new char[studentWithUpper.length()]; 
+studentWithUpper.length;            stringReader.read(arStud, 0, studentWithUpper.length()); 
+StringWriter;            StringWriter stringWriter = new StringWriter(); 
+stringWriter.writearStud;            stringWriter.write(arStud); 
+;            String[] stuAr = student.split(" "); 
+System.out.printlnArrays.toStringstuAr;            System.out.println(Arrays.toString(stuAr)); 
+\n;            bufferedWriter.write(stringWriter.getBuffer() + "\n"); 
+bufferedReader.close;        bufferedReader.close(); 
+bufferedWriter.close;        bufferedWriter.close(); 
+} 
